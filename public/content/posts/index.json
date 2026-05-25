@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "tectbdtest",
+    "body": "echnologies is a leading global technology company that offers a wide range of solutions and services in computing and storage. Founded by \\*\\*Michael Dell\\*\\* in 1984, the company has grown to become one of the largest tech companies in the world.",
+    "monetizationUrl": "",
+    "thumbnail": "/uploads/a089ea87d9a6ce6585873cd89369ce76.jpg",
+    "title": "TechWorld",
+    "language": "en",
+    "publishDate": "2026-05-23T18:04:00+06:00",
+    "category": "tech",
+    "seoDescription": "TechWorld",
+    "collection": "posts",
+    "route": "/posts/tectbdtest"
+  },
+  {
+    "slug": "best-ai-tools-2026",
+    "body": "Hello this is new .",
+    "monetizationUrl": "",
+    "thumbnail": "/uploads/gemini_generated_image_qhye7jqhye7jqhye.png",
+    "title": "Chat GPT 4.4",
+    "language": "en",
+    "publishDate": "2026-05-23T17:02:00+06:00",
+    "category": "tools",
+    "seoDescription": "Best Ai Tools 2026",
+    "collection": "posts",
+    "route": "/posts/best-ai-tools-2026"
+  },
+  {
+    "slug": "best-ai-tools-for-students-2026",
+    "language": "en",
+    "category": "ai",
+    "title": "Best AI Tools for Students in 2026",
+    "seoDescription": "A practical guide to the best AI tools students can use for research, note-taking, writing support, and productivity in 2026.",
+    "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
+    "monetizationUrl": "https://example.com/ai-tools",
+    "publishDate": "2026-05-23T10:00:00+06:00",
+    "body": "## Why AI tools matter for students\n\nAI tools can help students summarize research, organize class notes, improve writing clarity, and plan study sessions more efficiently. The best tools should be easy to use, privacy-aware, and helpful without replacing real learning.\n\n## Recommended use cases\n\nUse AI for brainstorming, outline creation, flashcards, language support, and productivity workflows. Always review the final output carefully and follow your school or university academic integrity rules.\n\n## Final thoughts\n\nStart with one or two reliable tools and build a simple workflow. A focused setup is better than using too many apps at once.",
+    "collection": "posts",
+    "route": "/posts/best-ai-tools-for-students-2026"
+  }
+]

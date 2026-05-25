@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BDTechTool publishes AI, technology, tutorials, and tools content for modern digital builders."
+    />
+    <title>BDTechTool — AI, Tech, Tutorials & Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+  </head>
+  <body data-theme="dark">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="site-shell">
+      <header class="site-topbar" aria-label="Primary header">
+        <div class="topbar-inner">
+          <a class="brand-link" href="/" aria-label="BDTechTool home">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span>BDTechTool</span>
+          </a>
+
+          <nav class="primary-nav" aria-label="Primary navigation">
+            <a href="/" aria-current="page">Home</a>
+            <a href="#latest-posts">Latest</a>
+            <a href="#categories">Categories</a>
+            <a href="/admin/" data-admin-link>Admin</a>
+          </nav>
+
+          <div class="topbar-actions" aria-label="Display controls">
+            <div class="language-toggle" role="group" aria-label="Language selector">
+              <button type="button" aria-pressed="true">BN</button>
+              <button type="button" aria-pressed="false">EN</button>
+            </div>
+
+            <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">☾</button>
+            <button class="sidebar-toggle" type="button" aria-label="Open category sidebar">☰</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-layout">
+        <aside class="site-sidebar" id="categories" aria-label="Content filters and sponsored placements">
+          <section class="sidebar-card" aria-labelledby="category-filter-title">
+            <h2 class="sidebar-title" id="category-filter-title">Explore Categories</h2>
+            <ul class="category-list">
+              <li>
+                <a class="category-filter" href="#latest-posts" aria-current="true">
+                  <span>All Posts</span>
+                  <span class="category-count">24</span>
+                </a>
+              </li>
+              <li>
+                <a class="category-filter" href="#ai-posts">
+                  <span>AI</span>
+                  <span class="category-count">08</span>
+                </a>
+              </li>
+              <li>
+                <a class="category-filter" href="#tech-posts">
+                  <span>Tech</span>
+                  <span class="category-count">06</span>
+                </a>
+              </li>
+              <li>
+                <a class="category-filter" href="#tutorial-posts">
+                  <span>Tutorials</span>
+                  <span class="category-count">05</span>
+                </a>
+              </li>
+              <li>
+                <a class="category-filter" href="#tool-posts">
+                  <span>Tools</span>
+                  <span class="category-count">05</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <aside class="ad-card" aria-label="Google AdSense placement">
+            <div>
+              <strong>Google AdSense</strong>
+              <p>Responsive ad slot placeholder</p>
+            </div>
+          </aside>
+
+          <section class="affiliate-card" aria-labelledby="affiliate-title">
+            <span class="affiliate-badge">Daraz Deals</span>
+            <h2 class="sidebar-title" id="affiliate-title">Sponsored tool picks</h2>
+            <p>Designated space for Daraz affiliate badges, product links, and seasonal offers.</p>
+          </section>
+
+          <section class="affiliate-card" aria-labelledby="amazon-affiliate-title">
+            <span class="affiliate-badge">Amazon Picks</span>
+            <h2 class="sidebar-title" id="amazon-affiliate-title">Global tech essentials</h2>
+            <p>Designated space for Amazon affiliate badges and recommended tech accessories.</p>
+          </section>
+        </aside>
+
+        <main class="main-content" id="main-content">
+          <section class="hero-panel" aria-labelledby="hero-title">
+            <p class="eyebrow">AI • Tech • Tutorials • Tools</p>
+            <h1 class="hero-title" id="hero-title">Build smarter with BDTechTool.</h1>
+            <p class="hero-description">
+              Discover practical guides, honest reviews, and monetization-ready resources for creators,
+              developers, and tech-focused businesses.
+            </p>
+            <div class="hero-actions" aria-label="Featured actions">
+              <a class="button-primary" href="#latest-posts">Browse Latest</a>
+              <a class="button-secondary" href="/admin/" data-admin-link>Open CMS</a>
+            </div>
+          </section>
+
+          <section class="content-section" id="latest-posts" aria-labelledby="latest-posts-title">
+            <div class="section-header">
+              <div>
+                <h2 class="section-title" id="latest-posts-title">Latest Articles</h2>
+                <p class="section-subtitle">Dynamic post cards from decoupled JSON content will render here.</p>
+              </div>
+              <a class="post-link" href="#categories">Filter by category →</a>
+            </div>
+
+            <div class="post-grid" aria-label="Post card grid">
+              <article class="post-card">
+                <div class="post-thumbnail" role="img" aria-label="Abstract AI article thumbnail"></div>
+                <div class="post-content">
+                  <div class="post-meta">
+                    <span class="post-category">AI</span>
+                    <span class="post-language">BN</span>
+                    <time datetime="2026-05-23">May 23, 2026</time>
+                  </div>
+                  <h3 class="post-title">
+                    <a href="#post-ai-workflow">How AI tools improve daily creator workflows</a>
+                  </h3>
+                  <p class="post-excerpt">
+                    A practical, dynamic-ready card structure for guides, reviews, and tutorials.
+                  </p>
+                  <a class="post-link" href="#post-ai-workflow" aria-label="Read article about AI creator workflows">Read more →</a>
+                </div>
+              </article>
+
+              <article class="post-card">
+                <div class="post-thumbnail" role="img" aria-label="Modern tech review thumbnail"></div>
+                <div class="post-content">
+                  <div class="post-meta">
+                    <span class="post-category">Tech</span>
+                    <span class="post-language">EN</span>
+                    <time datetime="2026-05-22">May 22, 2026</time>
+                  </div>
+                  <h3 class="post-title">
+                    <a href="#post-tech-stack">Choosing a fast stack for content-first websites</a>
+                  </h3>
+                  <p class="post-excerpt">
+                    Clean post metadata, SEO excerpts, and monetization links can be injected safely.
+                  </p>
+                  <a class="post-link" href="#post-tech-stack" aria-label="Read article about content-first website stacks">Read more →</a>
+                </div>
+              </article>
+
+              <article class="post-card">
+                <div class="post-thumbnail" role="img" aria-label="Tutorial article thumbnail"></div>
+                <div class="post-content">
+                  <div class="post-meta">
+                    <span class="post-category">Tutorials</span>
+                    <span class="post-language">BN</span>
+                    <time datetime="2026-05-21">May 21, 2026</time>
+                  </div>
+                  <h3 class="post-title">
+                    <a href="#post-tutorial-cms">Publishing structured JSON content with a CMS</a>
+                  </h3>
+                  <p class="post-excerpt">
+                    This layout is ready for CMS-driven article cards and searchable content filters.
+                  </p>
+                  <a class="post-link" href="#post-tutorial-cms" aria-label="Read tutorial about CMS JSON publishing">Read more →</a>
+                </div>
+              </article>
+
+              <article class="post-card">
+                <div class="post-thumbnail" role="img" aria-label="Tools article thumbnail"></div>
+                <div class="post-content">
+                  <div class="post-meta">
+                    <span class="post-category">Tools</span>
+                    <span class="post-language">EN</span>
+                    <time datetime="2026-05-20">May 20, 2026</time>
+                  </div>
+                  <h3 class="post-title">
+                    <a href="#post-tool-review">Top productivity tools for small tech teams</a>
+                  </h3>
+                  <p class="post-excerpt">
+                    Affiliate CTA styling and responsive grid behavior are included in the system.
+                  </p>
+                  <a class="post-link" href="#post-tool-review" aria-label="Read article about productivity tools">Read more →</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div>
+            <h2 class="footer-title">BDTechTool</h2>
+            <p>Premium tech content, tutorials, and review experiences.</p>
+          </div>
+          <nav class="footer-meta" aria-label="Footer navigation">
+            <a href="/admin/" data-admin-link>CMS</a>
+            <a href="#latest-posts">Posts</a>
+            <a href="#categories">Categories</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

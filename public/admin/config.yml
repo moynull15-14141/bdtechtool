@@ -1,0 +1,210 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend:
+  url: http://localhost:8081/api/v1
+  allowed_hosts:
+    - localhost
+    - 127.0.0.1
+
+publish_mode: editorial_workflow
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+site_url: https://bdtechtool.com
+display_url: https://bdtechtool.com
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    description: Blog posts, tutorials, tools, and tech articles stored as JSON.
+    folder: src/content/posts
+    create: true
+    delete: false
+    extension: json
+    format: json
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{language}} / {{category}}"
+    sortable_fields:
+      - publishDate
+      - title
+      - language
+      - category
+    view_filters:
+      - label: Bengali
+        field: language
+        pattern: bn
+      - label: English
+        field: language
+        pattern: en
+      - label: AI
+        field: category
+        pattern: ai
+      - label: Tech
+        field: category
+        pattern: tech
+      - label: Tutorials
+        field: category
+        pattern: tutorials
+      - label: Tools
+        field: category
+        pattern: tools
+    fields:
+      - label: Slug
+        name: slug
+        widget: string
+        required: true
+        hint: Lowercase URL slug, for example "best-ai-tools-2026". Use only a-z, 0-9, and hyphens.
+        pattern:
+          - "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          - Use lowercase kebab-case with only a-z, 0-9, and hyphens.
+      - label: Language
+        name: language
+        widget: select
+        required: true
+        options:
+          - label: Bengali
+            value: bn
+          - label: English
+            value: en
+      - label: Category
+        name: category
+        widget: select
+        required: true
+        options:
+          - label: AI
+            value: ai
+          - label: Tech
+            value: tech
+          - label: Tutorials
+            value: tutorials
+          - label: Tools
+            value: tools
+      - label: Title
+        name: title
+        widget: string
+        required: true
+        hint: Human-readable article title.
+      - label: SEO Description
+        name: seoDescription
+        widget: text
+        required: true
+        hint: Keep this concise for search snippets and social previews.
+      - label: Thumbnail Image
+        name: thumbnail
+        widget: image
+        required: true
+        media_library:
+          config:
+            multiple: false
+      - label: Affiliate/Monetization URL
+        name: monetizationUrl
+        widget: string
+        required: false
+        pattern:
+          - "^(https?:\\/\\/[^\\s]+)?$"
+          - Enter a valid http(s) URL or leave this field empty.
+      - label: Full Article
+        name: body
+        widget: markdown
+        required: true
+        minimal: false
+      - label: Publish Date
+        name: publishDate
+        widget: datetime
+        required: true
+        date_format: YYYY-MM-DD
+        time_format: HH:mm
+        format: YYYY-MM-DDTHH:mm:ssZ
+        picker_utc: false
+
+  - name: reviews
+    label: Reviews
+    label_singular: Review
+    description: Product and tool reviews stored as JSON.
+    folder: src/content/reviews
+    create: true
+    delete: false
+    extension: json
+    format: json
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{language}} / {{category}}"
+    sortable_fields:
+      - publishDate
+      - title
+      - language
+      - category
+    fields:
+      - label: Slug
+        name: slug
+        widget: string
+        required: true
+        hint: Lowercase URL slug, for example "best-budget-phone-review". Use only a-z, 0-9, and hyphens.
+        pattern:
+          - "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          - Use lowercase kebab-case with only a-z, 0-9, and hyphens.
+      - label: Language
+        name: language
+        widget: select
+        required: true
+        options:
+          - label: Bengali
+            value: bn
+          - label: English
+            value: en
+      - label: Category
+        name: category
+        widget: select
+        required: true
+        options:
+          - label: AI
+            value: ai
+          - label: Tech
+            value: tech
+          - label: Tutorials
+            value: tutorials
+          - label: Tools
+            value: tools
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: SEO Description
+        name: seoDescription
+        widget: text
+        required: true
+      - label: Thumbnail Image
+        name: thumbnail
+        widget: image
+        required: true
+        media_library:
+          config:
+            multiple: false
+      - label: Affiliate/Monetization URL
+        name: monetizationUrl
+        widget: string
+        required: false
+        pattern:
+          - "^(https?:\\/\\/[^\\s]+)?$"
+          - Enter a valid http(s) URL or leave this field empty.
+      - label: Full Article
+        name: body
+        widget: markdown
+        required: true
+        minimal: false
+      - label: Publish Date
+        name: publishDate
+        widget: datetime
+        required: true
+        date_format: YYYY-MM-DD
+        time_format: HH:mm
+        format: YYYY-MM-DDTHH:mm:ssZ
+        picker_utc: false

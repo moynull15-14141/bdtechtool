@@ -1,0 +1,24 @@
+{
+  "name": "bdtechtool",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "BDTechTool - blazing-fast tech blog and review website with dual theme and bilingual support.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "cms": "decap-server",
+    "prebuild": "node scripts/validate-content.mjs && node scripts/generate-content-index.mjs",
+    "build": "node ./node_modules/vite/bin/vite.js build",
+    "preview": "vite preview --host 127.0.0.1",
+    "content:validate": "node scripts/validate-content.mjs",
+    "content:index": "node scripts/generate-content-index.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "decap-server": "^3.3.1",
+    "postcss": "^8.4.37",
+    "postcss-preset-env": "^8.2.2",
+    "vite": "^5.4.1"
+  }
+}
