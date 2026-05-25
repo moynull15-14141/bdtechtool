@@ -2,19 +2,18 @@
   command = "npm run build"
   publish = "dist"
 
-# Ensure admin panel loads correctly without SPA interference
+# Serve the Decap CMS admin panel as static files without browser redirects.
 [[redirects]]
   from = "/admin"
-  to = "/admin/"
-  status = 301
-  force = true
-
-# Tell Netlify to stop evaluating and just serve the admin index.html for any admin paths
-[[redirects]]
-  from = "/admin/*"
+  to = "/admin/index.html"
   status = 200
 
-# SPA fallback for all other routes (placed last, it won't catch /admin because of the rule above)
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+# SPA fallback for all other routes (placed last, it won't catch /admin because of the rules above)
 [[redirects]]
   from = "/*"
   to = "/index.html"
