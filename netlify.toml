@@ -9,17 +9,16 @@
   status = 301
   force = true
 
+# Tell Netlify to stop evaluating and just serve the admin index.html for any admin paths
 [[redirects]]
   from = "/admin/*"
-  to = "/admin/:splat"
   status = 200
 
-# SPA fallback for all other routes (must be last)
+# SPA fallback for all other routes (placed last, it won't catch /admin because of the rule above)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  conditions = { NOT_Path = "/admin*" }
 
 # Headers for main site
 [[headers]]
