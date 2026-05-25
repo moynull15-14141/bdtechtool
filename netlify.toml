@@ -37,7 +37,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "no-referrer"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
-    Content-Security-Policy = "default-src 'self' https:; base-uri 'self'; object-src 'none'; form-action 'self' https://api.netlify.com; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' https://unpkg.com https://identity.netlify.com https://decap-cms.org; connect-src 'self' https://api.netlify.com https://identity.netlify.com https://decap-cms.org https:;"
+    Content-Security-Policy = "default-src 'self' https:; base-uri 'self'; object-src 'none'; form-action 'self' https://api.netlify.com; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://identity.netlify.com https://decap-cms.org; connect-src 'self' https://api.netlify.com https://identity.netlify.com https://decap-cms.org https:;"
 
 # Cache assets
 [[headers]]
