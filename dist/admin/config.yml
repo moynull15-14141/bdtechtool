@@ -10,6 +10,7 @@ local_backend:
 
 publish_mode: editorial_workflow
 
+# Uploaded media is committed under public/uploads and served by Vite/Netlify from /uploads.
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
